@@ -1,0 +1,60 @@
+body{
+        margin: 0em;
+        padding: 0em;
+        background-color: #C4E6F9;
+    }
+.register{
+    display: flex;
+    margin-top: 1em;
+    flex-wrap: wrap;
+    padding-left:1em;
+    padding-right:1em;
+    flex-direction: column;
+    border: 2px solid grey;
+    border-radius:2em;
+    background-color: #5BBCF3;
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+   flex-direction: column;
+    margin-bottom:1em;
+}
+main{
+    width:40%;
+    margin:0 auto;
+}
+input[type=text]:focus,select[name=City]:focus,textarea[name=textarea]:focus{
+    border:4px solid #FF0000;
+}
+input[type=text], .gender,select[name=City],textarea[name=textarea]{
+    font-size:1.5em;
+    background-color: #C4E6F9;
+}
+input[type=radio]{
+    margin-left:1em;
+}
+.container label{
+     font-size: 1.5em;
+     color:#000000;
+}
+.heading{
+    text-align: center;
+    font-size:3em;
+    color:#000000;
+    font-weight: bold;
+}
+.cancel-button{
+        font-size:1.7em;
+        margin:1em 1em 2em 1em;
+        background-color: #E91515;
+}
+input[type=submit]{
+    font-size:1.7em;
+        margin:1em 1em 2em 1em;
+    background-color: #4CAF50;
+}
+
+.buttons{
+    text-align: center;
+}

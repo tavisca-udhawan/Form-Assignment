@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script src="script.js"></script>
+    </head>
+    <body>
+    <header> </header>    
+    <main>
+    <form id="form" class="register" action="Welcome.html" onsubmit="return formValidation()" name="registerForm" method="POST">
+            <p class="heading">Sign Up</p>
+        <div class="container">
+            <label for="firstName"><b>First Name</b><p id="f_name"></p></label>
+            <input type="text" id="fname" name="firstName" placeholder="First Name" onblur="return FirstNameValidation()" /></div>
+        <div class="container"><label id="lname" for="lastName"><b>Last Name</b><p id="l_name"></p></label>
+            <input type="text" id="lstname" name="lastName" placeholder="Last Name" onblur="return LastNameValidation()"/></div>
+        <div class="container"><label for="contact"><b>Contact</b><p id="phone"></p></label>
+            <input type="text" id="contact" name="contact" placeholder="Contact" onblur="contactValidation()"/>
+        </div> 
+        <div class="container"><label for="email"><b>Email</b><p id="email"></p></label>
+            <input type="text" id="email-content" name="email" placeholder="Email" onblur="return emailValidation()"/>
+        </div> 
+        <div class="container"><label for="address"><b>Address</b><p id="address"></p></label>
+            <textarea id="text-area" name="address" rows="6" placeholder="Address" onblur="return addressValidation()"></textarea>
+        </div> 
+        <div class="container"><label for="city"><b>City</b> <p id="city-content"></p></label>
+           <select onblur="return Validate()" name="City" id="city">
+             <option value=0>--SELECT--</option>
+             <option value="Mumbai">Mumbai</option>
+             <option value="Pune">Pune</option>
+             <option value="Bangalore">Bangalore</option>
+             <option value="hyderabad">Hyderabad</option>
+             <option value="Delhi">Delhi</option>    
+             <option value="Others">Others</option>
+           </select>
+        </div> 
+        <div class="gender"><label><b>Gender</b></label>
+          <input id="male" onblur="return genderCheck()" type="radio" name="gender" value="Male" />Male
+          <input id="female" onblur="return genderCheck()" type="radio" name="gender" value="Female"/>Female
+          <input id="trans" onblur="return genderCheck()" type="radio" name="gender" value="Trans"/>Trans
+             <p id="gender-check"></p>
+        </div> 
+        <div class="buttons">
+           <button class="cancel-button" onclick="cancelRequest()">Cancel</button>
+           <input type="submit" value="Register"/>
+        </div>
+    </form>
+    </main>
+    <footer>
+    </footer>
+    </body>
+</html>
